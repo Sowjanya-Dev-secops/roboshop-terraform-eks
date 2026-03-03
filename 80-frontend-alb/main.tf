@@ -25,7 +25,7 @@ resource "aws_lb_listener" "ingress_alb" {
 
     fixed_response {
       content_type = "text/html"
-      message_body = "<h1>Hi, I am sowmya studying in 7th std</h1>"
+      message_body = "<h1>Hi, I am from HTTPS ingress alb </h1>"
       status_code  = "200"
     }
   }
