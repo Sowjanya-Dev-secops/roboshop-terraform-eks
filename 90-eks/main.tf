@@ -163,9 +163,11 @@ module "eks" {
       max_size     = 10
       desired_size = 2
       taints = {
-        key = "upgrade"
-        value = "true"
-        effect = "NO_SCHEDULE"
+        upgrade ={
+          key = "upgrade"
+          value = "true"
+          effect = "NO_SCHEDULE"
+        }
       }
     }
   }
