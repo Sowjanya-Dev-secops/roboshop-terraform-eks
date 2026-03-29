@@ -2,11 +2,12 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "6.23.0"
+      version = "6.28.0"
+      #"6.23.0"
     }
   }
   backend "s3" {
-    bucket = "sgr-remote-state-dev"
+    bucket = "remote-state-sowji-dev1"
     key    = "roboshop-dev-eks1"
     region = "us-east-1"
     use_lockfile = true

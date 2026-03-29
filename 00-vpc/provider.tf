@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "sgr-remote-state-dev"
+    bucket = "remote-state-sowji-dev1"
     key    = "roboshop-eks-vpc"
     region = "us-east-1"
     use_lockfile = true
